@@ -26,6 +26,11 @@ public class CalculatorEngine
         return _currentOperation.Execute(_firstNumber, secondNumber);
     }
 
+    public bool HasFirstNumber()
+    {
+        return _firstNumber != 0;
+    }
+
     public void Clear()
     {
         _firstNumber = 0;

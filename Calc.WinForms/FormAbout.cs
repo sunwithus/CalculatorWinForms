@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.DataFormats;
 
-namespace WinFormsCalc
+namespace Calc.WinForms
 {
     public partial class FormAbout : Form
     {
@@ -22,5 +22,13 @@ namespace WinFormsCalc
         {
             this.Close();
         }
+
+        private async void HelloButton_Click(object sender, EventArgs e)
+        {
+            this.AboutLabel.Text = "🌟 И тебе привет 👋";
+            await Task.Delay(2000);
+            this.Close();
+        }
+
     }
 }
